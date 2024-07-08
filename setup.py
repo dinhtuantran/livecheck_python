@@ -1,10 +1,13 @@
 import setuptools
 
+VERSION = "1.0.0"
+
 with open('README.md', 'r', encoding='utf-8') as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name='livecheck_python',
+    version=VERSION,
     author='Dinh Tuan Tran',
     author_email='tuan.t.d@ieee.org',
     description='Check Program Bugs Anywhere - Track Your Logs On-the-Go',
