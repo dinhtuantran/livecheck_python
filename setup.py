@@ -14,15 +14,14 @@ setuptools.setup(
     keywords='debug, track, exception, log, plot, graph, smartphone, realtime, machine learning, deep learning, computer vision',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/dinhtuantran/livecheck_python',
+    url='https://livecheck.dev',
     project_urls={
         'Documentation': 'https://livecheck.dev/help',
         'Bug Reports': 'https://github.com/dinhtuantran/livecheck_python/issues',
         'Source Code': 'https://github.com/dinhtuantran/livecheck_python',
         # 'Funding': '',
     },
-    package_dir={'': 'src'},
-    packages=setuptools.find_packages(where='src'),
+    py_modules='livecheck_python',
     classifiers=[
         # see https://pypi.org/classifiers/
         'Development Status :: 5 - Production/Stable',
