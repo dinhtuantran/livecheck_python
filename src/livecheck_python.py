@@ -194,12 +194,12 @@ class LiveCheck:
     def set_notification_period(self, value):
         self.notification_period = value
 
-    def log(self, data, log_id=None):
+    def log(self, value, log_id=None):
         if self.stop_log:
             livecheck_logger.warning(self.last_message)
             return
         
-        data = self.process_parameters(data)
+        data = self.process_parameters(value)
         self.log_id = log_id if log_id is not None else self.log_id + 1
         is_successful, response = self.api.log(
             self.your_id, self.access_key, self.token, self.project_name, self.log_id,
