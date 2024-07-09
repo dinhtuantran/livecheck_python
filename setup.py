@@ -1,6 +1,6 @@
 import setuptools
 
-VERSION = "1.0.1"
+VERSION = "1.0.2"
 
 with open('README.md', 'r', encoding='utf-8') as fh:
     long_description = fh.read()
@@ -21,7 +21,7 @@ setuptools.setup(
         'Source Code': 'https://github.com/dinhtuantran/livecheck_python',
         # 'Funding': '',
     },
-    py_modules='livecheck_python',
+    packages=['livecheck_python'],
     classifiers=[
         # see https://pypi.org/classifiers/
         'Development Status :: 5 - Production/Stable',
